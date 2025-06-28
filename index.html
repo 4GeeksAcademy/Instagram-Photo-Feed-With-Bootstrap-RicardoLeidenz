@@ -16,45 +16,55 @@
     <body>
         <div class="container-fluid">
             <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                    Instagram
-                </a>
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createPostModal">Create new post</button>
-                <div class="modal fade" id="createPostModal" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Create new post</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="mb-3">
-                                <label class="form-label"><strong>Caption:</strong></label>
-                                <textarea class="form-control mb-3" placeholder="Add the caption of your post here"></textarea>
-                                <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
-                                <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                <ul class="nav justify-content-start">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item pe-3">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createPostModal">Create new post</button>
+                        <div class="modal fade" id="createPostModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Create new post</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label class="form-label"><strong>Caption:</strong></label>
+                                        <textarea class="form-control mb-3" placeholder="Add the caption of your post here"></textarea>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success">Publish</button>
+                    </li>   
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                            </ul>
                         </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-gear"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                    </ul>
-                </div>
+                    </li>   
+                </ul>
             </nav>
             <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -66,44 +76,196 @@
             </ul>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-grid3" role="tabpanel" aria-labelledby="pills-grid3-tab" tabindex="0">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-4">
+                    <div class="row mb-3">
+                        <div class="col-4">
                             <img class="grid3pic" src="https://www.autotrainingcentre.com/wp-content/uploads/2014/02/Automotive-training.jpg">
-                            </div>
-                            <div class="col-4">
+                        </div>
+                        <div class="col-4">
                             <img class="grid3pic" src="https://images.squarespace-cdn.com/content/v1/551a19f8e4b0e8322a93850a/a8166613-ef9d-4c58-9e2c-bf05b5c9feb1/Title_Image_54_2.png">
-                            </div>
-                            <div class="col-4">
-                            <img class="grid3pic" src="https://media.istockphoto.com/id/1450340623/photo/portrait-of-successful-mature-boss-senior-businessman-in-glasses-asian-looking-at-camera-and.jpg?s=612x612&w=0&k=20&c=f0EqWiUuID5VB_NxBUEDn92W2HLENR15CFFPzr-I4XE=">
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-4">
+                        <div class="col-4">
+                            <img class="grid3pic" src="https://people.com/thmb/VOL67cFkucM0rjchj8jPfNbP8Cc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/rainn-wilson-spent-several-years-mostly-unhappy-071023-tout-1825aa5454544b3ab9312d6a1330fb09.jpg">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-4">
                             <img class="grid3pic" src="https://wherewonderwaits.com/wp-content/uploads/2021/06/creative-self-portrait-grasshoppers-1024x768.jpg">
-                            </div>
-                            <div class="col-4">
-                            <img class="grid3pic" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/ss_5d19c69d33abca6f6271d75f371d4241c0d6b2d1.1920x1080.jpg?t=1749757378">
-                            </div>
-                            <div class="col-4">
-                            <img class="grid3pic" src="https://image.api.playstation.com/vulcan/ap/rnd/202107/0919/9ewQXoMuOBkXXWXIoHyGGkXk.png">
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-4">
+                        <div class="col-4">
+                            <img class="grid3pic" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/ss_5d19c69d33abca6f6271d75f371d4241c0d6b2d1.1920x1080.jpg?t=1749757378">
+                        </div>
+                        <div class="col-4">
+                            <img class="grid3pic" src="https://image.api.playstation.com/vulcan/ap/rnd/202107/0919/9ewQXoMuOBkXXWXIoHyGGkXk.png">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-4">
                             <img class="grid3pic" src="https://media.istockphoto.com/id/1332489549/photo/time-with-family-overjoyed-african-american-family-laughing-and-posing-to-camera-isolated.jpg?s=612x612&w=0&k=20&c=7x4s1Nc89XfAlJypLy7LETJ10NJlSTb7XTFy9muXMSM=">
-                            </div>
-                            <div class="col-4">
+                        </div>
+                        <div class="col-4">
                             <img class="grid3pic" src="https://www.bodhisurfyoga.com/wp-content/uploads/2022/02/unbroken-wave.jpg">
-                            </div>
-                            <div class="col-4">
+                        </div>
+                        <div class="col-4">
                             <img class="grid3pic" src="https://neon.reviewjournal.com/wp-content/uploads/2025/02/20125909_web1_LIFE-IS-BEAUTIFUL_091622cs_024.jpg?w=1200">
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade show" id="pills-grid1" role="tabpanel" aria-labelledby="pills-grid1-tab" tabindex="0">
-
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-8 post">
+                                <div class="post-heading">
+                                    <div class="post-heading-title">
+                                        <h2>I finally got my dream car!</h2>
+                                    </div>
+                                    <div class="post-heading-date">
+                                        <p>06/24</p>
+                                    </div>
+                                </div>
+                                <img class="grid1pic" src="https://www.autotrainingcentre.com/wp-content/uploads/2014/02/Automotive-training.jpg">
+                                <div class="post-footer">
+                                    <strong>205 likes</strong>
+                                    <p>This car took me ages to buy and i finally got it. My wife left me and I dont know my kid. But it is worth it. :D</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 post">
+                                <div class="post-heading">
+                                    <div class="post-heading-title">
+                                        <h2>Another commision finished</h2>
+                                    </div>
+                                    <div class="post-heading-date">
+                                        <p>06/20</p>
+                                    </div>
+                                </div>
+                                <img class="grid1pic" src="https://images.squarespace-cdn.com/content/v1/551a19f8e4b0e8322a93850a/a8166613-ef9d-4c58-9e2c-bf05b5c9feb1/Title_Image_54_2.png">
+                                <div class="post-footer">
+                                    <strong>53 likes</strong>
+                                    <p>This one was for an indie game studio. It is for a town building game.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 post">
+                                <div class="post-heading">
+                                    <div class="post-heading-title">
+                                        <h2>I got promoted!!!</h2>
+                                    </div>
+                                    <div class="post-heading-date">
+                                        <p>06/19</p>
+                                    </div>
+                                </div>
+                                <img class="grid1pic" src="https://people.com/thmb/VOL67cFkucM0rjchj8jPfNbP8Cc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/rainn-wilson-spent-several-years-mostly-unhappy-071023-tout-1825aa5454544b3ab9312d6a1330fb09.jpg">
+                                <div class="post-footer">
+                                    <strong>532 likes</strong>
+                                    <p>Youre looking at the new assistant to the rigeonal manager.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 post">
+                                <div class="post-heading">
+                                    <div class="post-heading-title">
+                                        <h2>I am back doing portraits</h2>
+                                    </div>
+                                    <div class="post-heading-date">
+                                        <p>06/15</p>
+                                    </div>
+                                </div>
+                                <img class="grid1pic" src="https://wherewonderwaits.com/wp-content/uploads/2021/06/creative-self-portrait-grasshoppers-1024x768.jpg">
+                                <div class="post-footer">
+                                    <strong>2,243 likes</strong>
+                                    <p>Shout out to my beautiful model <strong>@Abril23</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 post">
+                                <div class="post-heading">
+                                    <div class="post-heading-title">
+                                        <h2>Taking a stroll down Riverwood</h2>
+                                    </div>
+                                    <div class="post-heading-date">
+                                        <p>06/10</p>
+                                    </div>
+                                </div>
+                                <img class="grid1pic" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/ss_5d19c69d33abca6f6271d75f371d4241c0d6b2d1.1920x1080.jpg?t=1749757378">
+                                <div class="post-footer">
+                                    <strong>412 likes</strong>
+                                    <p>People claim to have seen a dragon. :D</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 post">
+                                <div class="post-heading">
+                                    <div class="post-heading-title">
+                                        <h2>I love this game</h2>
+                                    </div>
+                                    <div class="post-heading-date">
+                                        <p>06/09</p>
+                                    </div>
+                                </div>
+                                <img class="grid1pic" src="https://image.api.playstation.com/vulcan/ap/rnd/202107/0919/9ewQXoMuOBkXXWXIoHyGGkXk.png">
+                                <div class="post-footer">
+                                    <strong>84 likes</strong>
+                                    <p>Ya'll have to play "A short hike" It is great!!! </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 post">
+                                <div class="post-heading">
+                                    <div class="post-heading-title">
+                                        <h2>My beautiful family!</h2>
+                                    </div>
+                                    <div class="post-heading-date">
+                                        <p>06/08</p>
+                                    </div>
+                                </div>
+                                <img class="grid1pic" src="https://media.istockphoto.com/id/1332489549/photo/time-with-family-overjoyed-african-american-family-laughing-and-posing-to-camera-isolated.jpg?s=612x612&w=0&k=20&c=7x4s1Nc89XfAlJypLy7LETJ10NJlSTb7XTFy9muXMSM=">
+                                <div class="post-footer">
+                                    <strong>1,243 likes</strong>
+                                    <p>Finally convinced them of having a professional photo shoot.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 post">
+                                <div class="post-heading">
+                                    <div class="post-heading-title">
+                                        <h2>I be surfing</h2>
+                                    </div>
+                                    <div class="post-heading-date">
+                                        <p>05/28</p>
+                                    </div>
+                                </div>
+                                <img class="grid1pic" src="https://www.bodhisurfyoga.com/wp-content/uploads/2022/02/unbroken-wave.jpg">
+                                <div class="post-footer">
+                                    <strong>12 likes</strong>
+                                    <p>Shredding some waves. Gnarly</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 post">
+                                <div class="post-heading">
+                                    <div class="post-heading-title">
+                                        <h2>Life is beautiful xoxo</h2>
+                                    </div>
+                                    <div class="post-heading-date">
+                                        <p>05/16</p>
+                                    </div>
+                                </div>
+                                <img class="grid1pic" src="https://neon.reviewjournal.com/wp-content/uploads/2025/02/20125909_web1_LIFE-IS-BEAUTIFUL_091622cs_024.jpg?w=1200">
+                                <div class="post-footer">
+                                    <strong>695 likes</strong>
+                                    <p>Raving is my passion.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
